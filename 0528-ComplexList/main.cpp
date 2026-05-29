@@ -8,22 +8,23 @@ using std::endl;
 
 int main(void)
 {
-	ComplexList cl;
+    ComplexList cl;
 
     for (int i = 0; i < 10; i++)
         cl.Add(i + 1, i + 2);
 
-    cout << "Get Test\n\n";
+    cout << "Get Test\n" << endl;
 
     for (int i = 0; i < cl.Length(); i++)
         cl.Get(i).ShowComplex();
 
-    cout << "\npGet Test\n\n";
+    cout << "\npGet Test\n" << endl;
 
     for (int i = 0; i < cl.Length(); i++)
         cl.pGet(i)->ShowComplex();
 
-    cout << "\n예외처리 Test\n\n";
+    cout << "\n예외처리 Test\n" << endl;
+
     try
     {
         cl.Get(100).ShowComplex();
@@ -33,5 +34,5 @@ int main(void)
         cout << msg << endl;
     }
 
-	return 0;
+    return 0;
 }

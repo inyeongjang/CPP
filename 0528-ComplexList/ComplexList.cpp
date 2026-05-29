@@ -1,8 +1,6 @@
 ﻿// 20230918 장인영
 
 #include "ComplexList.h"
-#include <iostream>
-using std::cout;
 
 // 1단계
 /*
